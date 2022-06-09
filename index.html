@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <!-- add form start -->
@@ -14,9 +15,30 @@
     </div>
     <!-- add form end -->
 
+    <!-- search inp -->
+    <input type="text" id="inp-search" placeholder="Seacrh" />
+    <!-- search end -->
+
     <!-- list start -->
     <div id="list"></div>
     <!-- list end -->
+
+    <!-- pagination - переходт на следующию страницу-->
+    <div id="pagination"></div>
+    <!-- pagination end -->
+
+    <!-- modal edit start-Модалка для редактирования -->
+    <div id="modal-edit">
+      <div id="modal-edit-body">
+        <button id="modal-edit-close">Close</button>
+        <div id="modal-edit-inps">
+          <input type="text" id="inp-edit-todo" />
+          <input type="text" id="inp-edit-id" />
+          <button id="btn-save-edit">Save</button>
+        </div>
+      </div>
+    </div>
+    <!-- modal edit end -->
     <script src="./js/main.js"></script>
   </body>
 </html>
